@@ -5,38 +5,21 @@
     <title>Rebound - Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rebound - Responsive Portfolio Theme for Twitter Bootstrap. Responsive HTML5, CSS3 and jQuery.">
-    <meta name="author" content="Pukeko Design Studio">
-    
+    <meta name="author" content="Pukeko Design Studio">    
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/font-icon.css" />
-    <!--[if IE 7]>
-      <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
-    <![endif]-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
-	<script src="js-slide/modernizr.custom.js"></script>
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <script src="js/respond.src.js"></script>
-    <![endif]-->
-
+	<script src="js-slide/modernizr.custom.js"></script>  
     <!-- Fav and touch icons -->
-    
-								   <script src="js/jquery.js"></script>
-
+	<script src="js/jquery.js"></script>
 	<script src="js/three66.min.js"></script>
 	<script src="js/flipbook.preview.min.js"></script>
-
     <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-    
+   	
 	<script type="text/javascript">
-
         $(document).ready(function () {
-
 			var book1 = {
                 pages:[
                     {src:"images/book1/car_magazine_1.jpg", thumb:"images/book1/car_magazine_1.jpg", title:"Cover"},
@@ -62,12 +45,7 @@
 				tilt:-15,
 				bookY:50,
 				zoom:.9
-			};
-			
-			
-			
-			
-			
+			};	
 			var book2 = {
                 pages:[
                     {src:"images/book2/1.jpg", thumb:"images/book2/2.jpg", title:"Cover"},
@@ -99,8 +77,7 @@
 				webgl:true,
 				skin:"light",
 				zoom:.9,
-			};
-			
+			};		
 			var book4 = {
                 pages:[
                     {src:"images/book4/1.png", thumb:"images/book4/4.png", title:"Cover"},
@@ -133,8 +110,64 @@
 				skin:"light",
 				zoom:.9,
 			};
-			
-			
+			var book1 = {
+                pages:[
+                    {src:"images/book1/car_magazine_1.jpg", thumb:"images/book1/car_magazine_1.jpg", title:"Cover"},
+                    {src:"images/book1/car_magazine_2.jpg", thumb:"images/book1/car_magazine_2.jpg", title:"Page two"},
+                    {src:"images/book1/car_magazine_3.jpg", thumb:"images/book1/car_magazine_3.jpg", title:"Page three"},
+                    {src:"images/book1/1.jpg", thumb:"images/book1/1.jpg", title:""},
+                    {src:"images/book1/2.jpg", thumb:"images/book1/2.jpg", title:"Page five"},
+                    {src:"images/book1/3.jpg", thumb:"images/book1/3.jpg", title:"Page six"},
+                    {src:"images/book1/page1.png", thumb:"images/book1/page1.png", title:""},
+                    {src:"images/book1/page2.png", thumb:"images/book1/page2.png", title:"Page eight"},
+                    {src:"images/book1/page3.png", thumb:"images/book1/page3.png", title:"page testting"},
+                    {src:"images/book1/page4.png", thumb:"images/book1/page4.png", title:""},
+                    {src:"images/book1/page5.png", thumb:"images/book1/page5.png", title:""},
+                    {src:"images/book1/page6.png", thumb:"images/book1/page6.png", title:""},
+                    {src:"images/book1/page7.png", thumb:"images/book1/page7.png", title:""},
+                    {src:"images/book1/page8.png", thumb:"images/book1/page8.png", title:""},
+                    {src:"images/book1/page9.png", thumb:"images/book1/page9.png", title:"Page fifteen"},
+                    {src:"images/book1/page1.png", thumb:"images/book1/page1.png", title:"End"}
+                ],
+				lightBox:true, 
+				webgl:true,
+				skin:"light",
+				tilt:-15,
+				bookY:50,
+				zoom:.9
+			};
+			var book2 = {
+                pages:[
+                    {src:"images/book2/1.jpg", thumb:"images/book2/2.jpg", title:"Cover"},
+                    {src:"images/book2/2.jpg", thumb:"images/book2/1.jpg", title:"Page two"},
+                    {src:"images/book2/1.jpg", thumb:"images/book2/2.jpg", title:"Page three"},
+                    {src:"images/book2/2.jpg", thumb:"images/book2/1.jpg", title:"Page 4"},
+                    {src:"images/book2/1.jpg", thumb:"images/book2/2.jpg", title:"Page 5"},
+                    {src:"images/book2/2.jpg", thumb:"images/book2/1.jpg", title:"Page 6"},
+                    {src:"images/book2/1.jpg", thumb:"images/book2/2.jpg", title:"Page 7"},
+                    {src:"images/book2/2.jpg", thumb:"images/book2/1.jpg", title:"End"}
+                ],
+				lightBox:true, 
+				webgl:true,
+				skin:"light",
+				zoom:.9,
+			};
+			var book3 = {
+                pages:[
+                    {src:"images/book3/1.jpg", thumb:"images/book3/2.jpg", title:"Cover"},
+                    {src:"images/book3/2.jpg", thumb:"images/book3/1.jpg", title:"Page two"},
+                    {src:"images/book3/3.jpg", thumb:"images/book3/4.jpg", title:"Page three"},
+                    {src:"images/book3/4.jpg", thumb:"images/book3/3.jpg", title:"Page 4"},
+                    {src:"images/book3/1.jpg", thumb:"images/book3/2.jpg", title:"Page 5"},
+                    {src:"images/book3/2.jpg", thumb:"images/book3/1.jpg", title:"Page 6"},
+                    {src:"images/book3/3.jpg", thumb:"images/book3/3.jpg", title:"Page 7"},
+                    {src:"images/book3/4.jpg", thumb:"images/book3/4.jpg", title:"End"}
+                ],
+				lightBox:true, 
+				webgl:true,
+				skin:"light",
+				zoom:.9,
+			};
 			
 			var book4 = {
                 pages:[
@@ -168,98 +201,36 @@
 				skin:"light",
 				zoom:.9,
 			};
-			var book6 = {
+			var book6= {
                 pages:[
-                    {src:"images/book6/1.jpg", thumb:"images/book6/4.jpg", title:"Cover"},
-                    {src:"images/book6/2.jpg", thumb:"images/book6/3.jpg", title:"Page two"},
-                    {src:"images/book6/3.jpg", thumb:"images/book6/2.jpg", title:"Page three"},
-                    {src:"images/book6/4.jpg", thumb:"images/book6/1.jpg", title:"Page 4"},
-                    {src:"images/book6/1.jpg", thumb:"images/book6/4.jpg", title:"Page 5"},
-                    {src:"images/book6/2.jpg", thumb:"images/book6/3.jpg", title:"Page 6"},
-                    {src:"images/book6/3.jpg", thumb:"images/book6/2.jpg", title:"Page 7"},
-                    {src:"images/book6/4.jpg", thumb:"images/book6/1.jpg", title:"End"}
+                    {src:"images/book5/1.png", thumb:"images/book5/4.png", title:"Cover"},
+                    {src:"images/book5/2.png", thumb:"images/book5/3.png", title:"Page two"},
+                    {src:"images/book5/3.png", thumb:"images/book5/2.png", title:"Page three"},
+                    {src:"images/book5/4.png", thumb:"images/book5/1.png", title:"Page 4"},
+                    {src:"images/book5/1.png", thumb:"images/book5/4.png", title:"Page 5"},
+                    {src:"images/book5/2.png", thumb:"images/book5/3.png", title:"Page 6"},
+                    {src:"images/book5/3.png", thumb:"images/book5/2.png", title:"Page 7"},
+                    {src:"images/book5/4.png", thumb:"images/book5/1.png", title:"End"}
                 ],
 				lightBox:true, 
 				webgl:true,
 				skin:"light",
-				zoom:.9,
-				
+				zoom:.9,				
 			};
-			
-			var book9 = {
-	                pages:[
-	                    {src:"images/book9/car_magazine_1.jpg", thumb:"images/book9/car_magazine_1.jpg", title:"Cover"},
-	                    {src:"images/book9/car_magazine_2.jpg", thumb:"images/book9/car_magazine_2.jpg", title:"Page two"},
-	                    {src:"images/book9/car_magazine_3.jpg", thumb:"images/book9/car_magazine_3.jpg", title:"Page three"},
-	                    {src:"images/book9/1.jpg", thumb:"images/book9/1.jpg", title:""},
-	                    {src:"images/book9/2.jpg", thumb:"images/book9/2.jpg", title:"Page five"},
-	                    {src:"images/book9/3.jpg", thumb:"images/book9/3.jpg", title:"Page six"},
-	                    {src:"images/book9/page1.png", thumb:"images/book9/page1.png", title:""},
-	                    {src:"images/book9/page2.png", thumb:"images/book9/page2.png", title:"Page eight"},
-	                    {src:"images/book9/page3.png", thumb:"images/book9/page3.png", title:"page testting"},
-	                    {src:"images/book9/page4.png", thumb:"images/book9/page4.png", title:""},
-	                    {src:"images/book9/page5.png", thumb:"images/book9/page5.png", title:""},
-	                    {src:"images/book9/page6.png", thumb:"images/book9/page6.png", title:""},
-	                    {src:"images/book9/page7.png", thumb:"images/book9/page7.png", title:""},
-	                    {src:"images/book9/page8.png", thumb:"images/book9/page8.png", title:""},
-	                    {src:"images/book9/page9.png", thumb:"images/book9/page9.png", title:"Page fifteen"},
-	                    {src:"images/book9/page9.png", thumb:"images/book9/page9.png", title:"End"}
-	                ],
-					lightBox:true, 
-					webgl:true,
-					skin:"light",
-					tilt:-15,
-					bookY:50,
-					zoom:.9
-				};
-			
-			var book7 = {
-                pages:[
-                    {src:"images/book7/car_magazine_1.jpg", thumb:"images/book7/car_magazine_1.jpg", title:"Cover"},
-                    {src:"images/book7/car_magazine_2.jpg", thumb:"images/book7/car_magazine_2.jpg", title:"Page two"},
-                    {src:"images/book7/car_magazine_3.jpg", thumb:"images/book7/car_magazine_3.jpg", title:"Page three"},
-                    {src:"images/book7/1.jpg", thumb:"images/book7/1.jpg", title:""},
-                    {src:"images/book7/2.jpg", thumb:"images/book7/2.jpg", title:"Page five"},
-                    {src:"images/book7/3.jpg", thumb:"images/book7/3.jpg", title:"Page six"},
-                    {src:"images/book7/page1.png", thumb:"images/book7/page1.png", title:""},
-                    {src:"images/book7/page2.png", thumb:"images/book7/page2.png", title:"Page eight"},
-                    {src:"images/book7/page3.png", thumb:"images/book7/page3.png", title:"page testting"},
-                    {src:"images/book7/page4.png", thumb:"images/book7/page4.png", title:""},
-                    {src:"images/book7/page5.png", thumb:"images/book7/page5.png", title:""},
-                    {src:"images/book7/page6.png", thumb:"images/book7/page6.png", title:""},
-                    {src:"images/book7/page7.png", thumb:"images/book7/page7.png", title:""},
-                    {src:"images/book7/page8.png", thumb:"images/book7/page8.png", title:""},
-                    {src:"images/book7/page9.png", thumb:"images/book7/page9.png", title:"Page fifteen"},
-                    {src:"images/book7/page1.png", thumb:"images/book7/page1.png", title:"End"}
-                ],
-				lightBox:true, 
-				webgl:true,
-				skin:"light",
-				tilt:-15,
-				bookY:50,
-				zoom:.9
-			};
-			
 			
 			$('.cover1').flipBook(book1);
 			$('.cover2').flipBook(book2);
 			$('.cover3').flipBook(book3);
 			$('.cover4').flipBook(book4);
 			$('.cover5').flipBook(book5);
-			$('.cover6').flipBook(book6);
-			$('.cover7').flipBook(book7);
-			$('.cover9').flipBook(book9);
+			$('.cover6').flipBook(book5);
         });
 		
-    </script>
-	
-	<style>
-		
+    </script>	
+	<style>		
 		.cover{
 			position:relative; 
-			display:inline-block;
-			/* border:1px solid black */
-			
+			display:inline-block;					
 		}
 		.img-top{
 			width:110px; 
@@ -270,16 +241,13 @@
 		font-size:12px;
 		text-align:center;
 		}
-	</style> 
-    
+		
+	</style>     
   </head>
-
-  <body>
- 
+  <body> 
     <div class="wrapper">
       <div class="row">
-	  <div class="recent ">
-					
+	  <div class="recent ">					
 				<div class="recent_carousel" data-settings='{
 						"auto": true,
 						"pause": 4000,
@@ -291,80 +259,52 @@
 						"controls" : false,
 						"pager" : false,
 						"infiniteLoop": true
-					}'>
-					   <div class="cover cover1 ">
+					}'><div class="cover cover1 ">
 							<a href="abc.php">
-							 <img class="img-top" src="images/book1/car_magazine_1.jpg"/>
-							 <p>Elephants Dream</p>
-							 </a>
-								
+							 <img class="img-top" src="images/book1/car_magazine_1.jpg"/><p>Elephants Dream</p></a>				
 							</a>
-						</div>
-						<div class="cover cover2">
+						</div><div class="cover cover2">
 							<a href="#">
-							 <img class="img-top" src="images/book2/1.jpg"/><p>Elephants Dream</p>
-							 </a>
-								
-						</div>
-						<div class="cover cover3 ">
+							 <img class="img-top" src="images/book2/1.jpg"/><p>Elephants Dream</p></a>								
+						</div><div class="cover cover3 ">
 							<a href="#">
-							<img class="img-top" src="images/book3/2.jpg"/><p>Elephants Dream</p>
+							<img class="img-top" src="images/book3/2.jpg"/><p>Elephants Dream</p></a>								
+						</div><div class="cover cover4 ">
+							<a href="#">
+							<img class="img-top" src="images/book4/4.jpg"/><p>Elephants Dream</p></a>								
+						</div><div class="cover cover5 ">
+							<a href="#">
+							<img class="img-top" src="images/book5/1.jpg"/><p>Elephants Dream</p></a>								
+						</div>
+						<div class="cover cover1 ">
+							<a href="#">
+							 <img class="img-top" src="images/book1/car_magazine_1.jpg"/><p>Elephants Dream</p></a>					
 							</a>
-								
-						</div>
-						<div class="cover cover4 ">
+						</div><div class="cover cover2">
 							<a href="#">
-							<img class="img-top" src="images/book4/4.jpg"/><p>Elephants Dream</p></a>
-								
-						</div>
-						<div class="cover cover5 ">
+							 <img class="img-top" src="images/book2/1.jpg"/><p>Elephants Dream</p></a>								
+						</div><div class="cover cover3 ">
 							<a href="#">
-							<img class="img-top" src="images/book5/1.jpg"/><p>Elephants Dream</p></a>
-								
-						</div>
-						<div class="cover cover6 ">
+							<img class="img-top" src="images/book3/2.jpg"/><p>Elephants Dream</p></a>								
+						</div><div class="cover cover4 ">
 							<a href="#">
-							 <img class="img-top" src="images/book6/2.jpg"/><p>Elephants Dream</p></a>
-								
-							</a>
-						</div>
-						<div class="cover cover7">
+							<img class="img-top" src="images/book4/4.jpg"/><p>Elephants Dream</p></a>								
+						</div><div class="cover cover5 ">
 							<a href="#">
-							 <img class="img-top" src="images/book7/page5.png"/><p>Elephants Dream</p></a>
-								
+							<img class="img-top" src="images/book5/1.jpg"/><p>Elephants Dream</p></a>								
 						</div>
-						<div class="cover cover9 ">
-							<a href="#">
-							<img class="img-top" src="images/book9/page9.png"/><p>Elephants Dream</p></a>
-								
-						</div>
-						<div class="cover cover4 ">
-							<a href="#">
-							<img class="img-top" src="images/book4/4.jpg"/><p>Elephants Dream</p></a>
-								
-						</div>
-						<div class="cover cover6 ">
-							<a href="#">
-							<img class="img-top" src="images/book6/1.jpg"/><p>Elephants Dream</p></a>
-								
-						</div>
-				</div><!-- recent_carousel -->	
-	
-	</div><!-- class="recent " -->
+						</div>		
+	</div>
       </div><!-- end row -->
     </div><!-- end wrapper -->
     <div class="">
 			<div id="grid-gallery" class="grid-gallery">
 				<section class="grid-wrap">
-					<ul class="grid">
-						
+					<ul class="grid">						
 						<li >
 							<figure>
 								<img src="images/book1/car_magazine_1.jpg" alt="img01"/>
-								<figcaption>
-								<h3>Letterpress asymmetrical</h3>
-								<p>Chillwave hoodie ea gentrify aute sriracha consequat.</p>
-								</figcaption>
+								<figcaption><h3>Letterpress asymmetrical</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>
 							</figure>
 						</li>
 						<li>
@@ -436,92 +376,141 @@
 					</ul>
 				</section><!-- // grid-wrap -->
 				<section class="slideshow">
-					<ul>
+				<ul>					
+						<li >						
+              
+        <div id="slider-load"  >
+            <img  class="img-slideshow" src="images/book2/1.jpg" />
+            <img class="img-slideshow" src="images/book2/2.jpg"/>
+           <img class="img-slideshow" src="images/book2/1.jpg"/>        
+            <img class="img-slideshow" src="images/book2/2.jpg"/>     
+           </div>	  
+		  	</li>
 						<li >
-							<figure >
-							<img class="img-slideshow" src="images/book1/page8.png" alt="img01"/>
-																
-							</figure>
+						 
+        <div id="slider-load"   >
+           <img  class="img-slideshow" src="images/book3/1.jpg" />
+           <img class="img-slideshow" src="images/book3/2.jpg"/>
+            <img class="img-slideshow" src="images/book3/1.jpg"/>      
+           <img class="img-slideshow" src="images/book3/2.jpg"/>   
+           </div>
+		  
+			</li>
+						<li >
+							 
+        <div id="slider-load" >
+            <img  class="img-slideshow" src="images/book4/1.jpg" />
+           <img class="img-slideshow" src="images/book4/2.jpg"/>
+           <img class="img-slideshow" src="images/book4/1.jpg"/>         
+           <img class="img-slideshow" src="images/book4/2.jpg"/>         
+           </div>
+       	 
 						</li>
 						<li >
-							<figure >
-								<img class="img-slideshow" src="images/book2/1.jpg" alt="img01"/>
-													
-							</figure>
-						</li>
-						<li>
-							<figure  >
-								<img class="img-slideshow" src="images/book3/2.jpg" alt="img01"/>
-															
-							</figure>
-						</li >
-						<li >
-							<figure >
-								<img class="img-slideshow" src="images/book4/3.jpg" alt="img01"/>
-											
-							</figure>
-						</li>
-						<li >
-							<figure >
-								<img class="img-slideshow" src="images/book5/2.jpg" alt="img01"/>
-															
-							</figure>
+							 <div id="slider3" > 
+               <!-- Slides Container -->
+        <div id="slider-load" u="slides" >
+           <img  class="img-slideshow" src="images/book5/1.jpg" />
+            <img class="img-slideshow" src="images/book5/2.jpg"/>
+          <img class="img-slideshow" src="images/book5/1.jpg"/>        
+            <img class="img-slideshow" src="images/book5/2.jpg"/>          
+           </div>
+       	
+ </li >
+ <li>
+							    
+        <div id="slider-load"  >
+            <img  class="img-slideshow" src="images/book2/1.jpg" />
+            <img class="img-slideshow" src="images/book2/2.jpg"/>
+           <img class="img-slideshow" src="images/book2/1.jpg"/>        
+            <img class="img-slideshow" src="images/book2/2.jpg"/>     
+           </div>	 
 						</li>
 						<li >
-							<figure >
-								<img class="img-slideshow" src="images/book1/2.jpg" alt="img01"/>
-																
-							</figure>
+						                
+        <div id="slider-load" >
+           <img  class="img-slideshow" src="images/book3/1.jpg" />
+           <img class="img-slideshow" src="images/book3/2.jpg"/>
+            <img class="img-slideshow" src="images/book3/1.jpg"/>      
+           <img class="img-slideshow" src="images/book3/2.jpg"/>   
+           </div>
+		   	
 						</li>
 						<li >
-							<figure >
-							<img class="img-slideshow" src="images/book1/2.jpg" alt="img01"/>
-								
-								
-							</figure>
+							    
+       <div id="slider-load" >
+            <img  class="img-slideshow" src="images/book4/1.jpg" />
+           <img class="img-slideshow" src="images/book4/2.jpg"/>
+           <img class="img-slideshow" src="images/book4/1.jpg"/>         
+           <img class="img-slideshow" src="images/book4/2.jpg"/>         
+           </div>
+       
 						</li>
 						<li >
-							<figure >
-								<img class="img-slideshow" src="images/book2/1.jpg" alt="img01"/>
-															
-							</figure>
-						</li>
-						<li>
-							<figure  >
-								<img class="img-slideshow" src="images/book3/1.jpg" alt="img01"/>
-																
-							</figure>
-						</li >
-						<li >
-							<figure >
-								<img class="img-slideshow" src="images/book4/1.jpg" alt="img01"/>
-																
-							</figure>
-						</li>
-						<li >
-							<figure >
-								<img class="img-slideshow" src="images/book5/1.jpg" alt="img01"/>
-															
-							</figure>
+							                 
+       <div id="slider-load" >
+            <div ><img  class="img-slideshow" src="images/book5/1.jpg" /></div>
+            <div><img class="img-slideshow" src="images/book5/2.jpg"/></a></div>
+            <div><img class="img-slideshow" src="images/book5/1.jpg"/>  </div>       
+            <div><img class="img-slideshow" src="images/book5/2.jpg"/></div>          
+           </div>
+      	
+ <li >
+							            
+         <div id="slider-load" >
+            <img  class="img-slideshow" src="images/book1/1.jpg" />
+            <img class="img-slideshow" src="images/book1/2.jpg"/>
+           <img class="img-slideshow" src="images/book1/1.jpg"/>       
+           <img class="img-slideshow" src="images/book1/2.jpg"/>        
+           </div>    
 						</li>
 						<li >
-							<figure >
-								<img class="img-slideshow" src="images/book1/2.jpg" alt="img01"/>
-																
-							</figure>
+						        
+        <div id="slider-load" >
+            <img  class="img-slideshow" src="images/book2/1.jpg" />
+            <img class="img-slideshow" src="images/book2/2.jpg"/>
+           <img class="img-slideshow" src="images/book2/1.jpg"/>        
+            <img class="img-slideshow" src="images/book2/2.jpg"/>     
+           </div>	 
+		   </li>
+						<li >
+							
+       <div id="slider-load"  >
+           <img  class="img-slideshow" src="images/book3/1.jpg" />
+           <img class="img-slideshow" src="images/book3/2.jpg"/>
+            <img class="img-slideshow" src="images/book3/1.jpg"/>      
+           <img class="img-slideshow" src="images/book3/2.jpg"/>   
+           </div>
+      
 						</li>
+						<li >
+							 
+       <div id="slider-load"  >
+            <img  class="img-slideshow" src="images/book4/1.jpg" />
+           <img class="img-slideshow" src="images/book4/2.jpg"/>
+           <img class="img-slideshow" src="images/book4/1.jpg"/>         
+           <img class="img-slideshow" src="images/book4/2.jpg"/>         
+           </div>
+     	
+		<li >
+		
+        <div id="slider-load" >
+            <img  class="img-slideshow" src="images/book5/1.jpg" />
+            <img class="img-slideshow" src="images/book5/2.jpg"/>
+            <img class="img-slideshow" src="images/book5/1.jpg"/>       
+            <img class="img-slideshow" src="images/book5/2.jpg"/>       
+           </div>
+      	 
+						</li>				 
 					</ul>
 					<nav>
 						<span class="icon nav-prev"></span>
 						<span class="icon nav-next"></span>
 						<span class="icon nav-close"></span>
-					</nav>
-					
+					</nav>					
 				</section><!-- // slideshow -->
-			</div><!-- // grid-gallery -->
-		
-		<div class="pagination-wrapper">
-		  
+			</div><!-- // grid-gallery -->		
+		<div class="pagination-wrapper">		  
             <ul class="pagination">
               <li class="disabled"><span>Prev</span></li>
               <li class="active"><a href="#none">1</a></li>
@@ -536,90 +525,19 @@
     <footer class="hidden-xs">
       <p class="pull-left"></p>
       <p class="pull-right"><a href="#">&copy; 2014 Alatca. All Rights Reserved</a>.</p>
-    </footer>
-    
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js-slide/imagesloaded.pkgd.min.js"></script>
+    </footer>    
+    <!-- Le javascript-->
+   <script src="js-slide/imagesloaded.pkgd.min.js"></script>
 		<script src="js-slide/masonry.pkgd.min.js"></script>
 		<script src="js-slide/classie.js"></script>
 		<script src="js-slide/cbpGridGallery.js"></script>
 		<script>
 			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
 		</script>
-    <script type='text/javascript' src='js/jquery.fitvids.js'></script>
-
+       		
+ <script type='text/javascript' src='js/jquery.fitvids.js'></script>
 <script type='text/javascript' src='js/jquery.bxslider.min.js'></script>
 <script type='text/javascript' src='js/js.js'></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/rebound.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script type="text/javascript">
-      
-      $(document).ready(function() {
-        
-        $('.dropdown-toggle').dropdown();
-        
-        var $container = $('.portfolio-wrapper');
-        
-        $container.imagesLoaded( function(){
-          $container.isotope({
-            itemSelector : '.card',
-            layoutMode : 'fitRows'
-          });
-        });
-        
-        // Needed functions
-        var getColWidth = function() {
-          var width,
-          windowWidth = $(window).width();
-          if( windowWidth <= 480 ) {
-            width = Math.floor( $container.width() );
-          } else if( windowWidth <= 768 ) {
-            width = Math.floor( $container.width() );
-          } else {
-            width = Math.floor( 250 );
-          }
-          return width;
-        }
-
-        function setWidths() {
-          var colWidth = getColWidth();
-          $container.children().css({ width: colWidth });
-        }
-
     
-        $(window).smartresize(function() {
-          setWidths();
-          $container.isotope({
-            masonry: {
-              columnWidth: getColWidth()
-            }
-          });
-        });
-        
-        $('.filter-portfolio li a').click(function(){
-          $('.filter-portfolio li.active').removeClass('active');
-          $(this).parent('li').addClass('active');
-          var selector = $(this).attr('data-filter');
-          $container.isotope({
-            filter: selector,
-            masonry: {  }
-          });
-          return false;
-        });
-        // update columnWidth on window resize
-        $(window).smartresize(function(){
-          $container.isotope({
-            // update columnWidth to a percentage of container width
-            masonry: {  }
-          });
-        });
-        
-      });
-      
-    </script>
-
   </body>
 </html>
