@@ -14,8 +14,8 @@ document.getElementById('cda-remove').addEventListener('click',function(e){
 $('.main').addClass("ssss");
 
 
-$('#cdawrap').on("click", function() {
-      alert( "Handler for .click() called." );
+jQuery('#cdawrap').on("click", function($) {
+     // alert( "Handler for .click() called." );
    $('#cdawrap').hide();
    $('#cda-remove').hide();
   

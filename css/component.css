@@ -49,7 +49,6 @@
 .grid li {
 	width: 25%;
 	float: left;
-	cursor: pointer;
 }
 
 .grid figure {

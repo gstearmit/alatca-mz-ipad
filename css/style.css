@@ -10,6 +10,7 @@
 ****************************************************/
 .red {
   color: #e45f56 ;
+  
 }
 .blue {
   color: #3498db;
@@ -2664,5 +2665,8 @@ footer p {
 }
 .recent{background:#202D36;
 padding-top:15px;
+float:left;
+overflow:hidden;
+width:100%;
 
 }
