@@ -70,15 +70,15 @@
 		// items total
 		this.itemsCount = this.gridItems.length;
 		// slideshow grid
-		this.slideshow = this.el.querySelector( 'section.slideshow > ul' );
+	//	this.slideshow = this.el.querySelector( 'section.slideshow > ul' );
 		// slideshow grid items
-		this.slideshowItems = [].slice.call( this.slideshow.children );
+	//	this.slideshowItems = [].slice.call( this.slideshow.children );
 		// index of current slideshow item
-		this.current = -1;
+	//	this.current = -1;
 		// slideshow control buttons
-		this.ctrlPrev = this.el.querySelector( 'section.slideshow > nav > span.nav-prev' );
-		this.ctrlNext = this.el.querySelector( 'section.slideshow > nav > span.nav-next' );
-		this.ctrlClose = this.el.querySelector( 'section.slideshow > nav > span.nav-close' );
+	//	this.ctrlPrev = this.el.querySelector( 'section.slideshow > nav > span.nav-prev' );
+	//	this.ctrlNext = this.el.querySelector( 'section.slideshow > nav > span.nav-next' );
+	//	this.ctrlClose = this.el.querySelector( 'section.slideshow > nav > span.nav-close' );
 		// init masonry grid
 		this._initMasonry();
 		// init events
