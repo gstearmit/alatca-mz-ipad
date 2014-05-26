@@ -2663,6 +2663,7 @@ footer p {
   }
   
 }
+/* top page */
 .recent{background:#202D36;
 padding-top:15px;
 float:left;
@@ -2670,3 +2671,20 @@ overflow:hidden;
 width:100%;
 
 }
+.cover{
+			position:relative; 
+			display:inline-block;	
+			width:110px;
+			float:left;
+			
+		}
+		.img-top{
+			width:110px; 
+			height:140px;
+			margin: 0px;
+		}
+		.cover a{
+			font-size:12px;
+			text-align:center;
+		}
+/* End top page */
