@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Rebound - Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rebound - Responsive Portfolio Theme for Twitter Bootstrap. Responsive HTML5, CSS3 and jQuery.">
+    <meta name="description" content="Alatca Magazinge">
     <meta name="author" content="Pukeko Design Studio">    
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -101,8 +101,7 @@
 				<span class="fusionentire">
 				 <a href="#" title="testting adv alatca" target="_top">
 				   <img src="img/adv.jpg" alt="magazin-publish" border="0"  style=" margin-top:10px;"/></a>
-				   <a href="#" class="fusiontext" title="testting adv alatca." target="_top">Auto Cart
-					</a>
+				   <a href="#" class="fusiontext" title="testting adv alatca." target="_top">Auto Cart</a>
 				</span>
 			</div>			
 			</div>				
@@ -126,7 +125,8 @@
 				//alert("Not connected internet. Try again..");
 			//});
 			 var bookArray =  new Array();
-			 var totalrecorl;
+			 var bookjsonAr = new Array();
+		
 					$.ajax({
 						url : serviceURL,
 						dataType : 'json',
@@ -134,15 +134,14 @@
 						success : function(data)
 						{
 						   var array = data.data;
-						    //   totalrecorl = array.lenght;
+						   var totalrecord = array.lenght;
 							$.each(array, function(i , books)
 							{
 								// alert(JSON.stringify(books));
-								 //var book= [];
-								 //book[books.id] = books.id;
-								// alert(book);
-								alert(books.id);
-								 
+								 alert(books.id);
+								 bookArray[books.id] = new Array();
+								 bookjsonAr[books.id] = new Array();
+								
 													$.ajax({
 												        url : service2 + books.id,
 														dataType : 'json',
@@ -152,25 +151,28 @@
 														   var array1 = array.data;	  
 															$.each(array1, function(j , detail)
 															{
-																 //alert(JSON.stringify(detail));
-																 return false;
-																  bookArray[books.id] = new Array();
-																  bookArray[books.id].concat(JSON.stringify(detail));
-																 //  bookArray[books.id]=  detail;
-																  alert(bookArray[books.id]);
-																
-																// bookArray[books.id] = [{src: ' detail.img', thumb:'detail.img', title:'detail.page'}];
+																// alert(JSON.stringify(detail));
+																// return false;
+																  
+																  var tmp = new Array();
+																      tmp = JSON.stringify(detail);
+																      bookArray[books.id] = bookArray[books.id].concat(tmp);
+
+
+																//  var detail_img = detail.img;
+																//  var detail_page = detail.page;
+																      bookjsonAr[books.id] = [
+																						      bookjsonAr[books.id].concat(tmp)
+																							 ];
 															});
 															
-															
-// 															var array = bookArray.join("*");
-// 															 alert(array);
-															// return false;
 														},
 														
 														});
-													
-													
+								alert('phuc :'+bookArray[books.id]);	
+								alert('json page :'+ bookjsonAr[books.id]);
+								// return false;				
+								//alert('tong chieu dai '+ totalrecorl);					
 								return false;
 							});
 							//$.each(array, function(i, employee) 
@@ -183,9 +185,8 @@
 						},
 						
 					});
+
 					
-					var array = bookArray.join("*");
-					 alert(array);
         
       //  for(var i=0 ;i<book.length;i++)
       //  	{
@@ -197,7 +198,7 @@
     	  
      // }
 		   
-   //i<=totalrecorl 
+   //i<= totalrecord 
 //    var booka = new Array();
 //    var test = new Array();
 //    for(var i = 0 ; i<5 ;i++)
