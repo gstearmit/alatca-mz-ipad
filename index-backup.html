@@ -141,7 +141,7 @@
 								 //var book= [];
 								 //book[books.id] = books.id;
 								// alert(book);
-								alert(books.id);
+								//alert(books.id);
 								 
 													$.ajax({
 												        url : service2 + books.id,
@@ -153,25 +153,25 @@
 															$.each(array1, function(j , detail)
 															{
 																 //alert(JSON.stringify(detail));
-																 return false;
+																 //return false;
 																  bookArray[books.id] = new Array();
-																  bookArray[books.id].concat(JSON.stringify(detail));
+																  bookArray[books.id].push(JSON.stringify(detail));
 																 //  bookArray[books.id]=  detail;
-																  alert(bookArray[books.id]);
+																 // alert(bookArray[books.id]);
 																
-																// bookArray[books.id] = [{src: ' detail.img', thumb:'detail.img', title:'detail.page'}];
+																 //bookArray[books.id] = "{ pages:[ '+ JSON.stringify(detail) +' ],lightBox:true, webgl:true,skin:"light",tilt:-15,bookY:50,zoom:.9};";
 															});
 															
 															
-// 															var array = bookArray.join("*");
-// 															 alert(array);
+															// var array = bookArray.join("*");
+															// alert(array);
 															// return false;
 														},
 														
 														});
 													
 													
-								return false;
+								//return false;
 							});
 							//$.each(array, function(i, employee) 
 							//{
@@ -183,9 +183,6 @@
 						},
 						
 					});
-					
-					var array = bookArray.join("*");
-					 alert(array);
         
       //  for(var i=0 ;i<book.length;i++)
       //  	{
@@ -198,61 +195,57 @@
      // }
 		   
    //i<=totalrecorl 
-//    var booka = new Array();
-//    var test = new Array();
-//    for(var i = 0 ; i<5 ;i++)
-// 	   {
-// 	    booka[i] =  {
-// 			         pages:[
+   var book = new Array();
+   for(var i = 0 ; i<5 ;i++)
+	   {
+	    book[i] =  {
+			         pages:[
 			                
-// 			                $.ajax({
-// 								url : serviceURL,
-// 								dataType : 'json',
-// 								async:false,
-// 								success : function(data)
-// 								{
-// 								   var array = data.data;
-// 								   $.each(array, function(i , books)
-// 									{
+			                $.ajax({
+								url : serviceURL,
+								dataType : 'json',
+								async:false,
+								success : function(data)
+								{
+								   var array = data.data;
+								   $.each(array, function(i , books)
+									{
 						                  
-// 						                      $.ajax({
-// 											        url : service2 + books.id,
-// 													dataType : 'json',
-// 												    async:false,
-// 													success : function(array)
-// 													{
-// 													   var array1 = array.data;	  
-// 														$.each(array1, function(j , detail)
-// 														{  
-// 															 //alert(JSON.stringify(detail));
-// 															 //return false;
-// 															// {src: "detail.img", thumb:"detail.img", title:"detail.page"},
-// 						                                     // {src: detail.img, thumb:detail.img, title:detail.page},
-// 															test = [{src: ' detail.img', thumb:'detail.img', title:'detail.page'}];
-															
-// 												        });
+						                      $.ajax({
+											        url : service2 + books.id,
+													dataType : 'json',
+												    async:false,
+													success : function(array)
+													{
+													   var array1 = array.data;	  
+														$.each(array1, function(j , detail)
+														{  
+															 //alert(JSON.stringify(detail));
+															 //return false;
+						                                     // {src: detail.img, thumb:detail.img, title:detail.page},
+												        });
 									
-// 											        },
+											        },
 											
-// 											        });//end jax
+											        });//end jax
 											        
 												
-// 									 });
-// 								 },
+									 });
+								 },
 											
-// 							   }) //; end jax
+							   }) //; end jax
 							
-// 					  ],
-// 					lightBox:true, 
-// 					webgl:true,
-// 					skin:"light",
-// 					tilt:-15,
-// 					bookY:50,
-// 					zoom:.9
+					  ],
+					lightBox:true, 
+					webgl:true,
+					skin:"light",
+					tilt:-15,
+					bookY:50,
+					zoom:.9
 					
-// 	                 };
+	                 };
 	   
-// 	}// end for   
+	}// end for   
 	   
 	   
 	   
